@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -11,8 +11,30 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-danger sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#inicio">Pokemon-UI</a>
 
-    <div class="row bg-danger">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+                aria-expanded="false" aria-label="Abrir menú">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pokemon">Pokémon</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <div class="row bg-danger" id="inicio">
 
         <div class="col-12">
             <h1 class="text-center text-white mt-3">Pokemon-UI</h1>
@@ -31,8 +53,9 @@
 
     </div>
 
+    <!--He puesto solo 4 porque colocar mas es demasiado repititivo -->
 
-    <div class="bg-white">
+    <div class="bg-white" id="pokemon">
         <div class="container pb-5">
 
             <div class="row justify-content-center g-4 mt-3">
@@ -84,7 +107,7 @@
                                 </li>
 
                             </ul>
-                            <button class="btn btn-warning mt-auto" data-bs-toggle="modal" data-bs-target="#Modal">Ver detalles</button>
+                            <button class="btn btn-warning mt-auto" data-bs-toggle="modal" data-bs-target="#modal-charmander">Ver detalles</button>
                         </div>
                     </div>
                 </div>
@@ -110,7 +133,7 @@
                                 </li>
 
                             </ul>
-                            <button class="btn btn-warning mt-auto" data-bs-toggle="modal" data-bs-target="#Modal">Ver detalles</button>
+                            <button class="btn btn-warning mt-auto" data-bs-toggle="modal" data-bs-target="#modal-squirtle">Ver detalles</button>
                         </div>
                     </div>
                 </div>
@@ -136,7 +159,7 @@
                                 </li>
 
                             </ul>
-                            <button class="btn btn-warning mt-auto" data-bs-toggle="modal" data-bs-target="#Modal">Ver detalles</button>
+                            <button class="btn btn-warning mt-auto" data-bs-toggle="modal" data-bs-target="#modal-pikachu">Ver detalles</button>
                         </div>
                     </div>
                 </div>
@@ -174,6 +197,126 @@
                     </li>
                     <li class="list-group-item d-flex justify-content-between">
                         <span>Order</span><strong>214</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Default</span><strong>Sí</strong>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-charmander" tabindex="-1" aria-labelledby="modal-charmander-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 text-capitalize" id="modal-charmander-label">charmander</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+
+            <div class="modal-body">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
+                    class="img-fluid mx-auto d-block mb-3" style="max-height: 200px;" alt="charmander">
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Base experience</span><strong>62</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Height</span><strong>6</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Weight</span><strong>85</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Order</span><strong>5</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Default</span><strong>Sí</strong>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-squirtle" tabindex="-1" aria-labelledby="modal-squirtle-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 text-capitalize" id="modal-squirtle-label">squirtle</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+
+            <div class="modal-body">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png"
+                    class="img-fluid mx-auto d-block mb-3" style="max-height: 200px;" alt="squirtle">
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Base experience</span><strong>63</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Height</span><strong>5</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Weight</span><strong>90</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Order</span><strong>7</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Default</span><strong>Sí</strong>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-pikachu" tabindex="-1" aria-labelledby="modal-pikachu-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 text-capitalize" id="modal-pikachu-label">pikachu</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+
+            <div class="modal-body">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
+                    class="img-fluid mx-auto d-block mb-3" style="max-height: 200px;" alt="pikachu">
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Base experience</span><strong>112</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Height</span><strong>4</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Weight</span><strong>60</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Order</span><strong>25</strong>
                     </li>
                     <li class="list-group-item d-flex justify-content-between">
                         <span>Default</span><strong>Sí</strong>
