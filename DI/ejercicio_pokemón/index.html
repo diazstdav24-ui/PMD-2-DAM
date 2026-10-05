@@ -58,7 +58,7 @@
                                 </li>
 
                             </ul>
-                            <a href="#" class="btn btn-warning mt-auto">Ver detalles</a>
+                            <button class="btn btn-warning mt-auto" data-bs-toggle="modal" data-bs-target="#modal-ditto">Ver detalles</button>
                         </div>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                                 </li>
 
                             </ul>
-                            <a href="#" class="btn btn-warning mt-auto">Ver detalles</a>
+                            <button class="btn btn-warning mt-auto" data-bs-toggle="modal" data-bs-target="#Modal">Ver detalles</button>
                         </div>
                     </div>
                 </div>
@@ -110,7 +110,7 @@
                                 </li>
 
                             </ul>
-                            <a href="#" class="btn btn-warning mt-auto">Ver detalles</a>
+                            <button class="btn btn-warning mt-auto" data-bs-toggle="modal" data-bs-target="#Modal">Ver detalles</button>
                         </div>
                     </div>
                 </div>
@@ -136,15 +136,62 @@
                                 </li>
 
                             </ul>
-                            <a href="#" class="btn btn-warning mt-auto">Ver detalles</a>
+                            <button class="btn btn-warning mt-auto" data-bs-toggle="modal" data-bs-target="#Modal">Ver detalles</button>
                         </div>
                     </div>
                 </div>
 
             </div>
         </div>
+
     </div>
 
+
+
+
+<div class="modal fade" id="modal-ditto" tabindex="-1" aria-labelledby="modal-ditto-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 text-capitalize" id="modal-ditto-label">ditto</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+
+            <div class="modal-body">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/132.png"
+                    class="img-fluid mx-auto d-block mb-3" style="max-height: 200px;" alt="ditto">
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Base experience</span><strong>101</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Height</span><strong>3</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Weight</span><strong>40</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Order</span><strong>214</strong>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Default</span><strong>Sí</strong>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    
+   
 </body>
 
 </html>
